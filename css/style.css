@@ -1,0 +1,24 @@
+.col {
+    margin: 300px;
+    border: 2px solid silver;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* padding: 5px; */
+}
+
+#bloco-login {
+    margin-top: 25px;
+}
+
+.form-label {
+    color: #ffffff;
+}
+
+body {
+    background-color: #556B2F;
+}
+
+.btn {
+    width: 40%;
+}
