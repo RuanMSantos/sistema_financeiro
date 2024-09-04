@@ -1,9 +1,10 @@
 .col {
-    margin: 300px;
-    border: 2px solid silver;
+    margin: 250px;
+    box-shadow: 1px 1px 10px 3px grey;
     border-radius: 10px;
     padding-left: 20px;
     padding-right: 20px;
+    background-color: #F2F0D5;
     /* padding: 5px; */
 }
 
@@ -12,11 +13,11 @@
 }
 
 .form-label {
-    color: #ffffff;
+    color: black;
 }
 
 body {
-    background-color: #556B2F;
+    background-image: linear-gradient(45deg, #F2EEAC 0%, #F2B705 100%);
 }
 
 .btn {
