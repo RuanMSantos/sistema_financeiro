@@ -14,21 +14,26 @@
           <div class="col">
             <form>
                 <div id="bloco-login">
-                    <div class="mb-3">
-                    <label style="font-weight: 500;" for="nome" class="form-label">Nome</label>
-                    <input style="border: 2px solid silver;" type="text" class="form-control" id="nome" name="nome">
+                  <div class="mb-3">
+                    <label style="font-weight: 500;" for="categoria" class="form-label">Nome</label>
+                    <input style="border: 2px solid silver;" type="text" class="form-control" id="categoria" name="categoria">
                     </div>
                     <div style="text-align: left; margin-top: 55px; font-size: 30px; font-weight: 500;" class="mb-3 radio">
-                    <input style="border: 2px solid silver;" type="radio" id="tipo" name="tipo">
-                    <label style="font-weight: 500;" for="tipo" id="text" class="form-label">Despeza</label>
-                    </div>
-                    <div style="text-align: left; font-size: 30px; font-weight: 500;" class="mb-3 radio">
-                    <input style="border: 2px solid silver;" type="radio" id="tipo" name="tipo">
-                    <label style="font-weight: 500;" for="tipo" class="form-label">Receita</label>
+                      <div class="form-check danger-radio">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Receita
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          Despeza
+                        </label>
                     </div>
                     <div class="mb-3">
-                    <label style="font-weight: 500;" for="descricao" class="form-label">Descrição</label>
-                    <input style="border: 2px solid silver;" type="text" class="form-control" id="descricao" name="descricao">
+                      <label style="font-weight: 500;" for="descricao" class="form-label">Descrição</label>
+                      <input style="border: 2px solid silver;" type="text" class="form-control" id="descricao" name="descricao">
                     </div>
                 </div>
                 <div class="mb-3 form-check">
