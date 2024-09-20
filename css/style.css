@@ -35,3 +35,20 @@ body {
 .mb-3 :focus {
     box-shadow: 0px 0px 4px 3px #26011C;
 }
+
+#tipo {
+    -ms-transform: scale(2); /* IE 9 */
+    -webkit-transform: scale(2); /* Chrome, Safari, Opera */
+    transform: scale(2);
+    margin-top: 0;
+    accent-color: red;
+}
+#tipo:focus {
+    box-shadow: none;
+}
+
+.form-label {
+    padding-left: 10px;
+    padding-top: 20px;
+    margin-bottom: 0;
+}
