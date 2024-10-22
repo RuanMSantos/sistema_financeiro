@@ -72,12 +72,12 @@ body {
     padding: 11px 70px;
     border-radius: 6px;
     font-weight: 700;
-    margin-top: 5px;
     font-size: 20px; 
+    margin-top: 5px;
     width: 200px;
 }
 
 .btn > button:hover {
-    background: #000;
     border-color: #000;
+    background: #000;
 }
