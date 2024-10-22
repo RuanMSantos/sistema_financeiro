@@ -69,9 +69,7 @@ body {
     width: 200px;
 }
 .btn > a {
-    background-color: black; 
-    border-color: black; 
-    padding: 11px 30px;
+    padding: 11px 70px;
     border-radius: 6px;
     font-weight: 700;
     margin-top: 5px;
