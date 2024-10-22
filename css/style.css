@@ -1,10 +1,10 @@
 .col {
-    margin: 250px;
     box-shadow: 1px 1px 10px 3px grey;
-    border-radius: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
     background-color: #F2F0D5;
+    border-radius: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 250px;
     /* padding: 5px; */
 }
 
@@ -26,10 +26,10 @@ body {
 
 
 .img1 img {
-    margin-top: 30px;
-    width: 100px;
-    display: flex;
     margin-left: 341px;
+    margin-top: 30px;
+    display: flex;
+    width: 100px;
 }
 
 .mb-3 {
@@ -53,4 +53,33 @@ body {
 .form-check-input:checked {
     background-color: #F2B705;
     border-color: #F2B705;
+}
+
+.btn {
+    width: 600px;
+    height: 50px;
+}
+
+.btn > button {
+    background-color: black; 
+    border-color: black; 
+    margin-bottom: 7px;
+    font-weight: 700;
+    font-size: 20px; 
+    width: 200px;
+}
+.btn > a {
+    background-color: black; 
+    border-color: black; 
+    padding: 11px 30px;
+    border-radius: 6px;
+    font-weight: 700;
+    margin-top: 5px;
+    font-size: 20px; 
+    width: 200px;
+}
+
+.btn > button:hover {
+    background: #000;
+    border-color: #000;
 }
