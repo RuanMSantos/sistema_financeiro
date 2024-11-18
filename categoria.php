@@ -10,6 +10,23 @@
 </head>
 <body>
     <div class="container text-center">
+    <?php
+        session_start();
+            include 'php/conexao.php';
+            if (isset($_SESSION['id'])){
+                $id = $_SESSION['id'];
+                $sql = "SELECT * FROM tb_user WHERE id_usuario = $id";
+                $query = $conexao->query($sql);
+                $resultado = $query->fetch_assoc();
+                $nome = $_SESSION['nome'] = $resultado['nome'];
+                echo "<h1>Olá $nome!</h1>";
+            } else {
+                echo "<script>alert('Usuario ou senha inválidos'); window.location.href = 'index.html'</script>";
+            }
+        ?>
+
+        <a href="php/logout.php">Sair</a>
+
         <div class="row">
           <div class="col">
             <form action="php/insert_categoria.php" method="post">

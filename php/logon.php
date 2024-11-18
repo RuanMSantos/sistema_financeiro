@@ -22,7 +22,7 @@ if ($email == null or $email == "" or $senha == null or $senha == ""){
 else {
     if ($email == $email_banco && $senha == $senha_banco){
         session_start(); // cria uma sessão, que funciona da mesma forma que um localStorage
-        $_SESSION['nome'] = $resultado['nome']; // da o valor da sessão pelo id do usuario
+        $_SESSION['id'] = $resultado['id_usuario']; // da o valor da sessão pelo id do usuario
         header('location: ../tela_inicial.php');
     } else {
         echo "<script>alert('Usuário ou senha Inválida'); window.location.href = '../index.html';</script>";
