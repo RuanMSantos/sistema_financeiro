@@ -19,7 +19,7 @@
         <?php
         session_start();
             include 'php/conexao.php';
-            if (isset($_SESSION['id'])){
+            if (isset($_SESSION['id'])){ // isset verifica se a variavel existe
                 $id = $_SESSION['id'];
                 $sql = "SELECT * FROM tb_user WHERE id_usuario = $id";
                 $query = $conexao->query($sql);
