@@ -13,6 +13,7 @@
         <div class="btn">
             <a href="categoria.php">Categoria</a>
             <a href="lancamento.html">Lançamento</a>
+            <a href="listar_usuarios.php">Lista de usuários</a>
         </div>
     </div>
     <div style="position: fixed; margin-left: 1600px; margin-top: 1350px;"> <!--É possível criar o php dentro de tags html, pois php é apenas texto-->

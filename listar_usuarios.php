@@ -8,13 +8,14 @@
     <style>
         
         body {
-            margin: 0;
             font-family: Arial, Helvetica, sans-serif;
+            background-color: #F5F5F5;
+            margin: 0;
         }
 
         nav {
-            padding: 10px;
             background-color: darkkhaki;
+            padding: 10px;
         }
 
         nav > h1 {
@@ -23,16 +24,19 @@
         }
 
         nav > a {
-            text-decoration: none;
             background-color: darkolivegreen;
+            text-decoration: none;
+            transition: all 0.7s;
+            border-radius: 6px;
+            margin-right: 1.2%;
             padding: 5px 20px;
+            text-align: right;
+            margin-left:3.7%;
+            margin-top: 10px;
             font-size: 30px;
             color: white;
-            border-radius: 6px;
-            margin-bottom: 10px;
-            height: 20px;
-            margin-left: 1100px;
-            transition: all 0.7s;
+            float: right;
+            height: 30px;
         }
 
         nav > a:hover {
@@ -45,10 +49,12 @@
         }
         
         td > a {
-            text-decoration: none;
-            color: pink;
             background-color: purple;
+            text-decoration: none;
             text-align: center;
+            color: pink;
+            padding-left: 10px;
+            padding-right:10px;
         }
 
     </style>
@@ -85,14 +91,23 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>0</td>
-                <td>Sem informações</td>
-                <td>Sem informações</td>
-                <td>Sem informações</td>
-                <td><a href="">Editar</a></td>
-                <td><a href="">Excluir</a></td>
-            </tr>
+            <?php
+                include 'php/conexao.php';
+                $sql = "SELECT * FROM tb_user";
+                $query = $conexao->query($sql);
+
+                if ($query->num_rows > 0){
+                    while ($row = $query->fetch_assoc()){
+                        echo "<tr>";
+                        echo "<td>" .$row["id_usuario"] ."</td>";
+                        echo "<td>" .$row["nome"] ."</td>";
+                        echo "<td>" .$row["email"] ."</td>";
+                        echo "<td>" .$row["cargo"] ."</td>";
+                        echo "<td><a href='editar_usuario.php?id=" .$row["id_usuario"] ."'>Editar</a></td>";
+                        echo "<td><a href='excluir_usuario.php?id=" .$row["id_usuario"] ."'onclick=\"return confirm('Você tem certeza que deseja excluir este usuario?')\">Excluir</a></td>";
+                    }
+                }
+            ?>
         </tbody>
     </table>
 </body>
